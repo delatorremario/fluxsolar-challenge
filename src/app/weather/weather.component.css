@@ -1,0 +1,15 @@
+@import "~bootstrap/dist/css/bootstrap.css"; 
+@import "../app.component.css";
+
+
+.data-container {
+    width: 50%;
+    
+}
+.data-container .data-item{
+    display: flex;
+}
+
+.data-container .data-item div{
+    padding: 5px
+}

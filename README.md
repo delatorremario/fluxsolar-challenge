@@ -1,27 +1,26 @@
 # FluxsolarChallenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
+1. Armar una mini-aplicación en Angular 7,8 o 9 que utilice la API de http://worldweatheronline.com y entregue el pronóstico del tiempo para las siguientes ciudades
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. Santiago, Chile
 
-## Code scaffolding
+2. Nueva York, Estados Unidos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+3. Caracas, Venezuela
 
-## Build
+4. Buenos Aires, Argentina
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+La idea es que la mini aplicación sea de una pantalla en la que se despliega un combo box (lista desplegable) con las 4 ciudades y al seleccionar una de las ciudades, haga la consulta al WORLDWEATHER ONLINE y despliegue los datos del tiempo. Temperatura y hora para la ciudad elegida.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. Adicionalmente en la lista se podrá incorporar nuevas cidudades con un campo de texto y un botón agregar. Entonces se agregará por ejemplo, Medellín, Colombia y luego esa ciudad aparecerá en la lista del combo y se podrá seleccionar para conocer el tiempo en esa ciudad.
 
-## Running end-to-end tests
+El uso del api es gratis hasta 500 requerimientos al día, basta con que te registres en worldweatheronline.com y tendrás una llave para el API.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Una vez que completes el desafio, deberás subir el codigo a github.com y enviar la dirección para clonar el proyecto, bajarlo y ejecutarlo.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Esta tarea no debería tomar más de 2 o 3 horas. Tienes hasta el día viernes 7/5/2020 a las 15.00 hrs para completar el desafío.
+
+Kenneth Valenzuela.

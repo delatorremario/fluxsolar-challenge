@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "fluxsolar-challenge"
+    }
+  },
+  "defaultProject": "fluxsolar-challenge",
+  "cli": {
+    "analytics": false
+  }
 }

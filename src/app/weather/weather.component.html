@@ -1,0 +1,61 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="form-group">
+    <div class="form-content">
+      <div>
+        <select formControlName="city" class="form-control">
+          <option disabled>Seleccione una Ciudad</option>
+          <option>Seleccione una Ciudad</option>
+          <option *ngFor="let city of cityList">{{ city }}</option>
+        </select>
+        <div
+          *ngIf="f.city.touched && f.city.invalid"
+          class="alert alert-danger"
+        >
+          <div *ngIf="f.city.errors.required">
+            Se requiere una Ciudad
+          </div>
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-primary " type="submit" [disabled]="!form.valid">
+          Buscar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="weather">
+  <div *ngFor="let city of weather.data.request">
+    <div class="data-container">
+      <div class="data-item">
+        <h3>{{ city.query }}</h3>
+      </div>
+      <div *ngFor="let current_condition of weather.data.current_condition">
+        <div class="data-container">
+          <div class="data-item">
+            <div *ngFor="let iconUrl of current_condition.weatherIconUrl">
+              <img src="{{ iconUrl.value }}" />
+            </div>
+            <div>
+              <h4>{{ current_condition.temp_C }} Cº</h4>
+
+              <div *ngFor="let desc of current_condition.weatherDesc">
+                <h4>{{ desc.value }} Cº</h4>
+              </div>
+            </div>
+          </div>
+          <div class="data-item">
+            <h5>{{ current_condition.observation_time }}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="error">
+  <div class="alert alert-danger">
+    {{ error }}
+  </div>
+</div>
